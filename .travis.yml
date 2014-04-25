@@ -9,12 +9,8 @@ branches:
         - master
 
 before_script:
-  - ulimit -n 10000
-  - sudo apt-get update
-  - composer self-update
-  - composer require doctrine/mongodb-odm="1.0.*@dev" --no-update
-  - composer require jmikola/geojson="~1.0" --no-update
-  - composer install --prefer-source --no-interaction
-  - wget http://getcomposer.org/composer.phar
+  - rm -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
+  - composer install --prefer-source
+  - bin/composer install --prefer-source
 
 script: phpunit
