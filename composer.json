@@ -1,0 +1,25 @@
+{
+    "name": "Oento/TestBundle",
+    "description": "Oento Test Bundle",
+    "keywords": ["oento"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Emil Cendrowski"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+
+        "symfony/framework-bundle": "~2.3",
+        "symfony/symfony": "2.*"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "psr-0": { "Oento\\Bundle\\TestBundle": "" }
+    },
+    "target-dir": "Oento/Bundle/TestBundle"
+}
