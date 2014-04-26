@@ -1,5 +1,5 @@
 {
-    "name": "Oento/TestBundle",
+    "name": "oento/test-bundle",
     "description": "Oento Test Bundle",
     "keywords": ["oento"],
     "type": "symfony-bundle",
